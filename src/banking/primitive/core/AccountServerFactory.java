@@ -9,7 +9,7 @@ public class AccountServerFactory {
 
 	}
 
-	public static AccountServerFactory getMe() {
+	public static AccountServerFactory getSingleton() {
 		if (singleton == null) {
 			singleton = new AccountServerFactory();
 		}
